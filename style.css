@@ -1,0 +1,636 @@
+/*
+* Template Name: Lumia
+* Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #292929;
+  }
+  
+  a {
+    color: #336633;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #c4000b;
+    text-decoration: none;
+  }
+
+  b, strong {
+    font-weight: bolder;
+    color: #000;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  @layer base {
+    html, body {
+      overflow-x: hidden;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  
+  #hero {
+    width: 100%;
+    background-position: center 20%;
+    background-size: cover;
+    position: relative;
+    margin-top: 70px;
+    padding: 0;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(56, 64, 70, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .container {
+    z-index: 2;
+  }
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #hero h1 span {
+    border-bottom: 4px solid #28843c;
+  }
+  
+  #hero h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #28843c;
+    text-transform: uppercase;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #4f8647;
+  }
+  
+  @media (max-width: 992px) {
+    #hero {
+      height: calc(66vh - -50px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    height: 150px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #header .logo {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #384046;
+  }
+  
+  #header .logo a,
+  #header .logo a:hover {
+    color: #384046;
+    text-decoration: none;
+  }
+  
+  #header .logo img {
+    max-height: 100px;
+    position: relative;
+  }
+
+
+/*--------------------------------------------------------------																
+# Pacientes Dropdown
+--------------------------------------------------------------*/
+
+.dropbtn {
+  background-color: #e7191f;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropbtn:hover {
+  background-color: #19e7e1;
+  color: black;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#municipio {
+  /* overflow-y: scroll; */
+  width: 500px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  cursor: pointer;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown5 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  outline: none;
+  border: 1px solid #e7191f;
+  padding: 0.5rem 1.1rem;
+  border-radius: 5px;
+  font-family: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -50px;
+}
+
+.search button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.55rem;
+  outline: none;
+  border: none;
+  background-color: #e7191f;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 467px) {
+  .search button {
+    position: relative;
+    left: -28px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .search input {
+    position: relative;
+    padding: 0.5rem;
+  }
+}
+
+/*--------------------------------------------------------------																
+# Search bar
+--------------------------------------------------------------*/
+
+.search-container {
+  float: right;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------																
+# Consulta
+--------------------------------------------------------------*/
+
+.products_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .products_wrapper {
+    display: block;
+  }
+}
+
+.products {
+  background-color: #7ddbd3;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .products {
+    margin-bottom: 5px;
+  }
+}
+
+.category {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.content {
+  padding: 1rem;
+}
+
+/*--------------------------------------------------------------																
+# Sections General
+--------------------------------------------------------------*/
+
+section {
+    padding: 60px 0;
+  }
+  
+  .section-bg {
+    background-color: #f7f7f7;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #e7191f;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+  .button-submit {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 2px;
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 5px;
+      transition: ease-in-out 0.3s;
+      color: #fff;
+      background: #28843c;
+      text-transform: uppercase;
+      margin-left: 5px;
+      border: none;
+  }
+  
+  .button-submit:hover {
+      background: #4f8647;
+      border: none;
+  }
+  
+
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: #333333;
+  }
+  
+  .navbar li {
+    position: relative;
+    float: none;
+    padding: 0 10px;
+    border-right: 1px #eaeaea solid;
+  }
+  
+  .navbar li:last-child {
+    border-right: none;
+  }
+  
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: #28843c;
+  }
+  
+  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+  
+  .navbar .dropdown ul li {
+    min-width: 200px;
+  }
+  
+  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #21262a;
+  }
+  
+  .navbar .dropdown ul a i {
+    font-size: 12px;
+  }
+  
+  .navbar .dropdown ul a:hover,
+  .navbar .dropdown ul .active:hover,
+  .navbar .dropdown ul li:hover>a {
+    color: #28843c;
+  }
+  
+  .navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+  
+  .navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+  
+  @media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+  
+    .navbar .dropdown .dropdown:hover>ul {
+      left: -100%;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 14px;
+}
+
+.overlay a {
+  padding: 8px 0px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
+}
+
+@media screen and (min-width: 992px) {
+.mob-nav {
+  display: none;
+}
+}
+
+@media (max-width: 991px) {
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .fixed-top {
+    position: absolute;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Dúvidas
+--------------------------------------------------------------*/
+
+#contato {
+  background-color: #19e7e1;
+  box-sizing: border-box;
+}
+
+#contato .container h2 {
+  color: #000;
+}
+
+#contato .container p {
+  color: #000;
+  text-align: center;
+}
+
+#contato .container a {
+  color: #000;
+  text-align: center;
+}
+
+#contato .container a:hover {
+  color: #e7191f;
+}
+
+
+
+  .title-h1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  display: table;
+}
