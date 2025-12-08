@@ -8,9 +8,9 @@ const pacienteData = [
     {
     title: "",
     category: "Carlos Ibáñez",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "28/12/2017", // link edital
+    ultConsulta: "28/12/2017",
     proxConsulta: "05/02/2026",
     exame: "Exame de Sangue"
     },
@@ -18,9 +18,9 @@ const pacienteData = [
     {
     title: "",
     category: "Theo Strøm",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "19/11/2021", // link edital
+    ultConsulta: "19/11/2021",
     proxConsulta: "19/01/2026",
     exame: "Exame de vista"
     },
@@ -28,9 +28,9 @@ const pacienteData = [
     {
     title: "",
     category: "Emma Sofía Ramos",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "06/02/2022", // link edital
+    ultConsulta: "06/02/2022",
     proxConsulta: "13/01/2026",
     exame: "Exame de Sangue"
     },
@@ -38,9 +38,9 @@ const pacienteData = [
     {
     title: "",
     category: "Anastasia Wang",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "30/05/2014", // link edital
+    ultConsulta: "30/05/2014",
     proxConsulta: "Sem consulta marcada",
     exame: "Sem exame pendente"
     },
@@ -48,9 +48,9 @@ const pacienteData = [
     {
     title: "",
     category: "Jesper Mårtensson",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "25/05/2015", // link edital
+    ultConsulta: "25/05/2015",
     proxConsulta: "Sem consulta marcada",
     exame: "Sem exame pendente"
     },
@@ -58,9 +58,9 @@ const pacienteData = [
     {
     title: "",
     category: "Kristian Salo",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "13/07/2024", // link edital
+    ultConsulta: "13/07/2024",
     proxConsulta: "10/12/2025",
     exame: "Exame de coração"
     },
@@ -68,9 +68,9 @@ const pacienteData = [
     {
     title: "",
     category: "Samuele Corradini",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "11/12/2016", // link edital
+    ultConsulta: "11/12/2016",
     proxConsulta: "Sem consulta marcada",
     exame: "Sem exame pendente"
     },
@@ -78,9 +78,9 @@ const pacienteData = [
     {
     title: "",
     category: "Iker Díaz",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "10/09/2015", // link edital
+    ultConsulta: "10/09/2015",
     proxConsulta: "26/01/2026",
     exame: "Exame de colesterol"
     },
@@ -88,9 +88,9 @@ const pacienteData = [
     {
     title: "",
     category: "Jekaterina Rudzīte",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "09/08/2016", // link edital
+    ultConsulta: "09/08/2016",
     proxConsulta: "Sem consulta marcada",
     exame: "Exame de urina"
     },
@@ -98,9 +98,9 @@ const pacienteData = [
     {
     title: "",
     category: "Oskar Procházka",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "18/01/2020", // link edital
+    ultConsulta: "18/01/2020",
     proxConsulta: "02/02/2026",
     exame: "Exame de glicemia"
     },
@@ -108,9 +108,9 @@ const pacienteData = [
     {
     title: "",
     category: "Helena Černe",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "14/03/2017", // link edital
+    ultConsulta: "14/03/2017",
     proxConsulta: "Sem consulta marcada",
     exame: "Sem exame pendente"
     },
@@ -118,9 +118,9 @@ const pacienteData = [
     {
     title: "",
     category: "Lennart Bergqvist",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "19/09/2013", // link edital
+    ultConsulta: "19/09/2013",
     proxConsulta: "Sem consulta marcada",
     exame: "Sem exame pendente"
     },
@@ -128,9 +128,9 @@ const pacienteData = [
     {
     title: "",
     category: "Raija Aho",
-    releaseDate: "Ainda Não Definida", // data de lançamento edital
+    releaseDate: "Ainda Não Definida",
     
-    ultConsulta: "29/07/2025", // link edital
+    ultConsulta: "29/07/2025",
     proxConsulta: "25/02/2026",
     exame: "Exame de fezes"
     },
