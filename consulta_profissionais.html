@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+
+  <title>Teste</title> 
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <script defer src="/public/script_unin.js"></script> 
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+  <!--
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  -->
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Template Main CSS File -->
+  <link href="../../assets/css/style_.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+  <!-- =======================================================
+  * Template Name: Lumia
+  * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo size-full me-auto">
+        <a class="nav-link scrollto active" href=""><img src="../../assets/img/testing logo.png"/></a>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="">Agendamento</a></li>
+          <li><a class="nav-link scrollto" href="">Nossa Equipe</a></li>
+          <li><a class="nav-link scrollto" href="">Área do Paciente</a></li>
+        </ul>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a class="nav-link" href="" onclick="closeNav()">Agendamento</a>
+            <a class="nav-link" href="" onclick="closeNav()">Nossa Equipe</a>
+            <a class="nav-link" href="" onclick="closeNav()">Área do Paciente</a>
+          </div>
+        </div>
+
+        <span class="mob-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+
+      </nav><!-- .navbar -->
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="container text-left text-md-left" data-aos="fade-up">
+        <h1>Consulta de Profissionais<br></h1>
+      </div>
+    </section><!-- End Hero -->
+
+    <!-- ======= What We Do Section ======= -->
+    <section id="sobre" class="what-we-do">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><strong>Consulta de Profissionais</strong></h2>
+          <p></p>
+        </div>
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Selecione o Profissional</button>
+          <div id="myDropdown" class="dropdown-content">
+
+          </div>
+        </div>
+
+        <div class="search">
+          <form action="#sobre" method="dialog">
+            <input type="search" placeholder="Pesquise o Profissional" class="form_control" id="form_control">
+            <button type="submit" class="btn_search" id="btn_search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        
+        <script>
+          /* Mostra o conteúdo contido no dropdown quando clicar para abrir o dropdown*/
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // fecha o dropdown ao clicar fora ou selecionar item do mesmo
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          
+          // permite pesquisar utilizando a tecla "ENTER"
+          var input = document.getElementById("form_control");
+          input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              document.getElementById("btn_search").click();
+            }
+          })
+        </script>
+      </div>
+    </section>
+<br>
+
+
+    <main>
+
+      <div class="container">
+
+
+
+      
+        <div class="products_wrapper">
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contato section-bg">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Entre em contato pelo endereço de e-mail <br> <strong style="color: black">contato@vidaplus.com.br</strong></p>
+        <p>ou pelo telefone <br> <strong style="color: black">(xx) xxxxx-xxxx</strong></p>
+      </div><!-- End Section Title -->
+    </section>
+
+
+    </body>
+  
+    </html>
