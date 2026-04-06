@@ -9,6 +9,7 @@ const profissionalData = [
     
     proxConsulta: "05/05/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
     
     {
@@ -17,6 +18,7 @@ const profissionalData = [
     
     proxConsulta: "09/04/2026",
     agenda: "https://docs.google.com/spreadsheets/d/1SySFhgqBOilPG4IShV0ufLlTKeD6p-MUEbJGOPR-8QA/edit?usp=sharing",
+    textoAgenda: "Confira aqui a agenda",
     },
     
     {
@@ -25,6 +27,7 @@ const profissionalData = [
     
     proxConsulta: "09/04/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -33,6 +36,7 @@ const profissionalData = [
     
     proxConsulta: "13/04/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -41,6 +45,7 @@ const profissionalData = [
     
     proxConsulta: "21/04/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -49,6 +54,7 @@ const profissionalData = [
     
     proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -57,6 +63,7 @@ const profissionalData = [
     
     proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -65,6 +72,7 @@ const profissionalData = [
     
     proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -73,6 +81,7 @@ const profissionalData = [
     
     proxConsulta: "16/05/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -81,6 +90,7 @@ const profissionalData = [
     
     proxConsulta: "14/05/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -89,6 +99,7 @@ const profissionalData = [
     
     proxConsulta: "17/04/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -97,6 +108,7 @@ const profissionalData = [
     
     proxConsulta: "17/04/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -105,6 +117,7 @@ const profissionalData = [
     
     proxConsulta: "05/05/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -113,6 +126,7 @@ const profissionalData = [
     
     proxConsulta: "24/05/2026",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
 
     {
@@ -121,6 +135,7 @@ const profissionalData = [
     
     proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
+    textoAgenda: "Agenda não disponível no momento",
     },
     ];
 
@@ -195,7 +210,7 @@ const profissionalData = [
                         <h4 class="category"><strong>${cat_items.category}</strong></h4>
                         <p>Especialização: <strong>${cat_items.especializacao}</strong></p>
                         <p>Próxima consulta: <strong>${cat_items.proxConsulta}</strong></p>
-                        <a href="${cat_items.agenda}" target="_blank"><strong>Confira Aqui a Agenda</strong></a>
+                        <a href="${cat_items.agenda}" target="_blank"><strong>${cat_items.textoAgenda}</strong></a>
                     </div>
                 </div>`;
         });
