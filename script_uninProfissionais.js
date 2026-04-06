@@ -1,142 +1,125 @@
-// video utilizado para referencia https://www.youtube.com/watch?v=DfUHpQIjVsg&list=WL&index=1
-
 "use strict";
 
 
 const profissionalData = [
 
     {
-    title: "",
     category: "Dr. Pedro do Carmo",
     especializacao: "Pediatra",
     
-    proxConsulta: "05/02/2026",
+    proxConsulta: "05/05/2026",
     agenda: "",
     },
     
     {
-    title: "",
     category: "Dr. Rex",
     especializacao: "Pediatra",
     
-    proxConsulta: "10/02/2026",
+    proxConsulta: "09/04/2026",
     agenda: "https://docs.google.com/spreadsheets/d/1SySFhgqBOilPG4IShV0ufLlTKeD6p-MUEbJGOPR-8QA/edit?usp=sharing",
     },
     
     {
-    title: "",
-    category: "Dra. Andréia SIqueira",
+    category: "Dra. Andréia Siqueira",
     especializacao: "Pediatra",
     
-    proxConsulta: "09/01/2026",
+    proxConsulta: "09/04/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dra. Vanessa Borges",
     especializacao: "Dermatologista",
     
-    proxConsulta: "13/01/2026",
+    proxConsulta: "13/04/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Luis da Cruz",
     especializacao: "Clínico Geral",
     
-    proxConsulta: "21/01/2026",
+    proxConsulta: "21/04/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dra. Sônia José",
     especializacao: "Clínico Geral",
     
-    proxConsulta: "26/12/2025",
+    proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Reginaldo Leite",
     especializacao: "Clínico Geral",
     
-    proxConsulta: "18/12/2025",
+    proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Renato Amaral",
     especializacao: "Cardiologista",
     
-    proxConsulta: "09/12/2025",
+    proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dra. Vera Viana",
     especializacao: "Ortopedista",
     
-    proxConsulta: "16/02/2026",
+    proxConsulta: "16/05/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Diogo Soares",
     especializacao: "Geriatra",
     
-    proxConsulta: "14/02/2026",
+    proxConsulta: "14/05/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Roberto de Assis",
     especializacao: "Nutricionista",
     
-    proxConsulta: "17/01/2026",
+    proxConsulta: "17/04/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Henrique Pinto",
     especializacao: "Dermatologista",
     
-    proxConsulta: "17/01/2026",
+    proxConsulta: "17/04/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dra. Larissa de Azevedo",
     especializacao: "Endocrinologista",
     
-    proxConsulta: "05/02/2026",
+    proxConsulta: "05/05/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Kauan Ribeiro",
     especializacao: "Oftalmologista",
     
-    proxConsulta: "24/02/2026",
+    proxConsulta: "24/05/2026",
     agenda: "",
     },
 
     {
-    title: "",
     category: "Dr. Raimundo de Lima",
     especializacao: "Oncologista",
     
-    proxConsulta: "23/12/2025",
+    proxConsulta: "Sem consulta marcada nos próximos meses",
     agenda: "",
     },
     ];
@@ -210,10 +193,9 @@ const profissionalData = [
                     </div>
                     <div class="content">
                         <h4 class="category"><strong>${cat_items.category}</strong></h4>
-                        <h3 class="title"><strong>${cat_items.title}</strong></h3>
                         <p>Especialização: <strong>${cat_items.especializacao}</strong></p>
                         <p>Próxima consulta: <strong>${cat_items.proxConsulta}</strong></p>
-                        <a href="${cat_items.agenda}"><strong>Confira Aqui a Agenda</strong></a>
+                        <a href="${cat_items.agenda}" target="_blank"><strong>Confira Aqui a Agenda</strong></a>
                     </div>
                 </div>`;
         });
@@ -228,15 +210,9 @@ const profissionalData = [
 
         if (searchValue !== "") {
             let searchCategory = profissionalData.filter(function (data) {
-                if (data.title.toLowerCase().includes(searchValue)) {
-                    return data;
-                } else if (data.category.toLowerCase().includes(searchValue)) {
-                    return data;
-                } else if (data.title.toUpperCase().includes(searchValue)) {
+                if (data.category.toLowerCase().includes(searchValue)) {
                     return data;
                 } else if (data.category.toUpperCase().includes(searchValue)) {
-                    return data;
-                } else if (data.title.includes(searchValue)) {
                     return data;
                 } else if (data.category.includes(searchValue)) {
                     return data;
