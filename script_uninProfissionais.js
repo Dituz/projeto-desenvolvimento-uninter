@@ -208,7 +208,7 @@ const profissionalData = [
                     </div>
                     <div class="content">
                         <h4 class="category"><strong>${cat_items.category}</strong></h4>
-                        <p>Especialização: <strong>${cat_items.especializacao}</strong></p>
+                        <p class="especializacao">Especialização: <strong>${cat_items.especializacao}</strong></p>
                         <p>Próxima consulta: <strong>${cat_items.proxConsulta}</strong></p>
                         <a href="${cat_items.agenda}" target="_blank"><strong>${cat_items.textoAgenda}</strong></a>
                     </div>
@@ -230,6 +230,12 @@ const profissionalData = [
                 } else if (data.category.toUpperCase().includes(searchValue)) {
                     return data;
                 } else if (data.category.includes(searchValue)) {
+                    return data;
+                } else if (data.especializacao.toLowerCase().includes(searchValue)) {
+                    return data;
+                } else if (data.especializacao.toUpperCase().includes(searchValue)) {
+                    return data;
+                } else if (data.especializacao.includes(searchValue)) {
                     return data;
                 }
             });
